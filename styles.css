@@ -1,0 +1,231 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  /* Header has an image as profile circle */
+  header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  /* Navigation styles */
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark gray text */
+  }
+  
+  nav ul li a:hover {
+    color: #f1ebe9; /* Change color on hover (Orange) */
+    background-color: #5e0a0a;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 50px 20px;
+    margin: 20px 0;
+    background-color: #fff; /* White background */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    /* border-style: outset; */
+    /* border-bottom: #efe8e8 2px inset; */
+  }
+  
+  section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Project styles */
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  .project h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  
+  }
+  
+  /* Additional section classes */
+  .about,
+  .projects,
+  .skills,
+  .contact {
+    text-align: center;
+    padding: 20px;
+    
+
+  }
+  
+/* Skill section has a unorderedlist and image icons */
+.skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills ul li {
+    width: 100px;
+    margin: 10px;
+  }
+  
+  .skills ul li img {
+    width: 100%;
+  }
+  
+
+
+/* class project has h3 title, image, source code button and live demo button */
+.project h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project .live-demo {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333; /* Dark background */
+        color: #fff; /* White text */
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .project .source-code {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333; /* Dark background */
+        color: #fff; /* White text */
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 10px;
+
+    }
+
+    .project .live-demo:hover, .source-code:hover {
+        background-color: #ff4500; /* Change color on hover (Orange) */
+    }
+
+
+
+
+  /* Media queries for responsiveness */
+  @media (min-width: 700px) {
+    header,
+    footer,
+    section {
+      max-width: 700px;
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    header,
+    footer,
+    section {
+      max-width: 1000px;
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    header,
+    footer,
+    section {
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+  
+  /* Responsive images */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Responsive table */
+  table {
+    width: 100%;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Responsive embed videos */
+  /*
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  */
